@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: inter, sans-serif;
+}
+
+.nav {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+.nav-search {
+  margin-left: 8px;
+}
+
+.search-icon {
+  position: absolute;
+
+  transform: translateY(30%);
+}
+.nav-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-search-input {
+  background-color: #303030;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%;
+  width: 100%;
+  box-sizing: border-box;
+  text-indent: 12px;
+  max-width: 700px;
+}
+
+.nav-notify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  position: relative;
+}
+
+.nav-notify-btn {
+  background-color: #1a1a1a;
+  border: none;
+}
+.nav-notify-icon {
+  background: #36fba1;
+  border: none;
+  padding: 9px 5px 10px 5px;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+.my-store {
+  position: absolute;
+  background-color: white;
+  max-width: 320px;
+  right: 30px;
+  top: 75px;
+  display: none;
+}
+.my-store-head {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.my-store-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+.my-store-body > li {
+  list-style: none;
+}
+.my-store-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+/* Main */
+.main {
+  background-color: #e3e3e3;
+}
+.main-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-trial {
+  background-color: #1a1a1a;
+  margin-top: 28px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  padding: 12px 8px 12px 16px;
+  gap: 16px;
+  width: 100%;
+  align-items: flex-start;
+}
+.main-trial > button {
+  background-color: #1a1a1a;
+  border: none;
+}
+.main-trial-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.main-trial-content > p {
+  color: white;
+  /* font-family: Inter; */
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.main-trial-btn {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+  display: flex;
+  align-items: center;
+}
+.close-trial {
+  display: none;
+}
+
+/*  Main title*/
+.main-form {
+  width: 100%;
+}
+.h3 {
+  cursor: pointer;
+}
+.main-form-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+  background-color: white;
+  margin-top: 16px;
+}
+.main-form-title-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-form-title-content-text > h4 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.main-form-title-content-text > p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.main-form-title-content > button {
+  background-color: white;
+  border: none;
+}
+.main-form-title-prog > label {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.prog-bar {
+  width: 72px;
+  color: #1a1a1a;
+  height: 12px;
+}
+.prog-bar::-ms-value {
+  background-color: #1a1a1a;
+}
+
+/* Main form body */
+.main-form-body {
+  background-color: white;
+  padding-top: 16px;
+}
+.main-form-body-1 {
+  display: flex;
+  gap: 8px;
+  margin: 8px;
+  padding: 2px 0px;
+}
+.main-form-body-1-opened {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.main-form-body-1-content {
+  margin-left: 10px;
+}
+.main-form-body-1-content > h3 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.main-form-body-1-content-p > button {
+  margin-top: 16px;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: white;
+  background: #404040;
+  box-shadow: 0px 0px 0px 1.5px #333, 0px 1px 0px 1.5px #333,
+    0px 2px 0px 0px #000;
+}
+#btn-import {
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: none;
+  color: black;
+}
+.main-form-body-1-content-p > p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin-top: 16px;
+}
+.main-form-body-1-img {
+  display: none;
+}
+
+.open-content {
+  display: none;
+}
