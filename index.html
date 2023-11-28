@@ -12,32 +12,40 @@
         <img
           src="https://crushingit.tech/hackathon-assets/shopify-icon.svg"
           alt="logo"
+          class="nav-logo-mobile"
+        />
+        <img
+          src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg"
+          alt="logo"
+          class="nav-logo-desktop"
         />
       </a>
-      <div class="nav-search">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          class="search-icon"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M12.3226 13.3833C11.3996 14.0841 10.2484 14.5 9 14.5C5.96243 14.5 3.5 12.0376 3.5 9C3.5 5.96243 5.96243 3.5 9 3.5C12.0376 3.5 14.5 5.96243 14.5 9C14.5 10.2484 14.0841 11.3996 13.3833 12.3226L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L12.3226 13.3833ZM13 9C13 11.2091 11.2091 13 9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9Z"
-            fill="#B5B5B5"
-          />
-        </svg>
+      <div class="nav-hold-search">
+        <div class="nav-search">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            class="search-icon"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.3226 13.3833C11.3996 14.0841 10.2484 14.5 9 14.5C5.96243 14.5 3.5 12.0376 3.5 9C3.5 5.96243 5.96243 3.5 9 3.5C12.0376 3.5 14.5 5.96243 14.5 9C14.5 10.2484 14.0841 11.3996 13.3833 12.3226L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L12.3226 13.3833ZM13 9C13 11.2091 11.2091 13 9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9Z"
+              fill="#B5B5B5"
+            />
+          </svg>
+        </div>
+        <input
+          type="text"
+          id="Search"
+          placeholder="Search"
+          name="Search"
+          class="nav-search-input"
+        />
       </div>
-      <input
-        type="text"
-        id="Search"
-        placeholder="Search"
-        name="Search"
-        class="nav-search-input"
-      />
       <div class="nav-notify">
         <button class="nav-notify-btn">
           <svg
@@ -55,12 +63,22 @@
             />
           </svg>
         </button>
-        <button class="nav-notify-icon">DC</button>
+        <div class="nav-notify-dc">
+          <div class="nav-notify-dc-p">
+            <p>Davii Collections</p>
+          </div>
+          <button class="nav-notify-icon">DC</button>
+        </div>
       </div>
+
+      <!-- MY STORE -->
       <div class="my-store">
         <div class="my-store-head">
-          <p>
-            <button>DC</button> Devii collections
+          <div class="my-store-head-admin">
+            <div class="my-store-head-admin-first">
+              <button>DC</button>
+              <p>Devii collections</p>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -76,8 +94,9 @@
                 stroke-linejoin="round"
               />
             </svg>
-          </p>
-          <div>
+          </div>
+
+          <div class="my-store-head-store">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -95,22 +114,78 @@
             <p>All stores</p>
           </div>
         </div>
-        <div class="my-store-body">
-          <a>Help Center</a>
-          <a>Changelog</a>
-          <a>Community forums</a>
-          <a>Hire a Shopify Partner</a>
-          <a>Keyboard shortcuts</a>
+        <nav class="my-store-body">
+          <ul>
+            <li>Help Center</li>
+            <li>Changelog</li>
+            <li>Community forums</li>
+            <li>Hire a Shopify Partner</li>
+            <li>Keyboard shortcuts</li>
+          </ul>
+          <ul class="">
+            <li>
+              David Micheal
+              <p id="email">davidmicheal@gmail.com</p>
+            </li>
+            <li>Manage account</li>
+            <li>Log out</li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- ALERT -->
+      <div class="alert">
+        <div class="alert-head">
+          <h5>Alerts</h5>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+                fill="#616161"
+              />
+              <path
+                d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z"
+                fill="#616161"
+              />
+              <path
+                d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z"
+                fill="#616161"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              class="alert-head-icon"
+            >
+              <path
+                d="M13.2803 9.03033C13.5732 8.73744 13.5732 8.26256 13.2803 7.96967C12.9874 7.67678 12.5126 7.67678 12.2197 7.96967L9.25 10.9393L8.03033 9.71967C7.73744 9.42678 7.26256 9.42678 6.96967 9.71967C6.67678 10.0126 6.67678 10.4874 6.96967 10.7803L8.71967 12.5303C9.01256 12.8232 9.48744 12.8232 9.78033 12.5303L13.2803 9.03033Z"
+                fill="#616161"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.5 10C15.5 13.0376 13.0376 15.5 10 15.5C6.96243 15.5 4.5 13.0376 4.5 10C4.5 6.96243 6.96243 4.5 10 4.5C13.0376 4.5 15.5 6.96243 15.5 10Z"
+                fill="#616161"
+              />
+            </svg>
+          </div>
         </div>
-        <div class="my-store-footer">
-          <a>David Micheal</a>
-          <a>Manage account</a>
-          <a>Log out</a>
+        <div class="alert-content">
+          <p>Alerts about your store and account will show here</p>
         </div>
       </div>
     </header>
 
-    <!-- main -->
+    <!-- MAIN -->
     <main class="main">
       <div class="main-container">
         <div class="main-trial">
@@ -164,10 +239,12 @@
               </button>
             </div>
             <div class="main-form-title-prog">
-              <label for="progress">1 / 5 completed</label>
+              <label for="progress"
+                ><span class="prog-el">0</span> / 5 completed</label
+              >
               <progress
                 id="progress"
-                value="1"
+                value="0"
                 max="5"
                 class="prog-bar"
               ></progress>
@@ -206,7 +283,7 @@
                     height="24"
                   />
                 </label>
-                <input type="checkbox" id="box-1" />
+                <input type="checkbox" id="box-1" class="checkbox" />
               </div>
               <div class="main-form-body-1-content">
                 <h3 class="h3">Customize your online store</h3>
@@ -220,7 +297,7 @@
               </div>
               <div class="main-form-body-1-img">
                 <img
-                  src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                  src="https://crushingit.tech/hackathon-assets/payment.png"
                   alt=""
                 />
               </div>
@@ -255,7 +332,7 @@
                     height="24"
                   />
                 </label>
-                <input type="checkbox" id="box-2" />
+                <input type="checkbox" id="box-2" class="checkbox" />
               </div>
               <div class="main-form-body-1-content">
                 <h3 class="h3">Add your first product</h3>
@@ -270,7 +347,7 @@
               </div>
               <div class="main-form-body-1-img">
                 <img
-                  src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                  src="https://crushingit.tech/hackathon-assets/product.png"
                   alt=""
                 />
               </div>
@@ -305,7 +382,7 @@
                     height="24"
                   />
                 </label>
-                <input type="checkbox" id="box-3" />
+                <input type="checkbox" id="box-3" class="checkbox" />
               </div>
               <div class="main-form-body-1-content">
                 <h3 class="h3">Add a custom domain</h3>
@@ -322,7 +399,7 @@
               </div>
               <div class="main-form-body-1-img">
                 <img
-                  src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                  src="https://crushingit.tech/hackathon-assets/website.png"
                   alt=""
                 />
               </div>
@@ -357,7 +434,7 @@
                     height="24"
                   />
                 </label>
-                <input type="checkbox" id="box-4" />
+                <input type="checkbox" id="box-4" class="checkbox" />
               </div>
               <div class="main-form-body-1-content">
                 <h3 class="h3">Name your store</h3>
@@ -407,7 +484,7 @@
                     height="24"
                   />
                 </label>
-                <input type="checkbox" id="box-5" />
+                <input type="checkbox" id="box-5" class="checkbox" />
               </div>
               <div class="main-form-body-1-content">
                 <h3 class="h3">Set up a payment provider</h3>
@@ -424,7 +501,7 @@
               </div>
               <div class="main-form-body-1-img">
                 <img
-                  src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                  src="https://crushingit.tech/hackathon-assets/name-store.png"
                   alt=""
                 />
               </div>
